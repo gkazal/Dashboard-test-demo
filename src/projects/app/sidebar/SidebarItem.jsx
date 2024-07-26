@@ -1,5 +1,7 @@
 
 const SidebarItem = ({ item, onClick, active }) => {
+
+  
   return (
     <div>
       <button type="button" className=" w-full" onClick={onClick}  onMouseEnter={onClick} >
