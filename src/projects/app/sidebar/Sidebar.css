@@ -1,0 +1,5 @@
+.submenu-container{
+    /* @apply absolute top-0  left-[70px] bg-white p-4 rounded-xl */
+    @apply fixed  bg-white p-3 rounded-xl
+
+}

@@ -1,0 +1,17 @@
+.sitebarIconHover:hover{
+    background-color: #fbf2fb;
+    border-radius: 8px;
+}
+
+.main-menu{
+    @apply relative
+}
+
+.submenu-container{
+    /* @apply absolute top-0  left-[70px] bg-white p-4 rounded-xl */
+    @apply fixed top-16  left-[70px] bg-white p-4 rounded-xl
+
+}
+.active{
+    background-color: blue;
+}
