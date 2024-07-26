@@ -5,7 +5,7 @@ import allService from "../../../assets/images/nav/All Service.svg";
 
 const Navbar = () => {
   return (
-    <div className="bg-[#FFFFFF] ">
+    <div className="bg-[#FFFFFF] border-b">
       <div className="navbar h-12">
         <div className="navbar-start ">
           {/* <select className="select select-bordered  max-w-xs w-[196px] ml-[10px] rounded-lg border border-gray-200 bg-[#FFFFFF] text-gray-800 ">

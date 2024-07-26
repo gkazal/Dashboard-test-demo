@@ -1,10 +1,10 @@
 const SidebarSubMenu = ({ item }) => {
- 
   
   return (
-    <div className="bg-white h-full">
-      <ul className="mt-[70px] w-[231px] overflow-hidden">
-        {item.subMenu.map((subItem) => (
+    <div className="sidebar-submenu">
+    <div className="bg-white h-full mt-[64px]">
+      <ul className="mt-[0px] w-[231px] overflow-hidden">
+        {item?.subMenu?.map((subItem) => (
           <li key={subItem.id}>
             <div
               key={subItem.id}
@@ -20,6 +20,7 @@ const SidebarSubMenu = ({ item }) => {
           </li>
         ))}
       </ul>
+    </div>
     </div>
   );
 };

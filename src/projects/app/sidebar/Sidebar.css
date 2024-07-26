@@ -3,3 +3,40 @@
     @apply fixed  bg-white p-3 rounded-xl
 
 }
+
+.sidebar-submenu{
+    @apply bg-white h-full
+}
+.drawer-open {
+    @apply w-[calc(100%_-_272px)]
+}
+.drawer-close {
+    @apply  w-[calc(100%_-_71px)]
+}
+.drawer-open .layer-fixed .sidebar-submenu{
+    @apply overflow-hidden w-full max-w-[231px] duration-300 border-r 
+ }
+ 
+ .drawer-close .layer-fixed .sidebar-submenu{
+     @apply max-w-[0] duration-300 
+ }
+ 
+ .main-menu-item .sidebar-image-hover:hover {
+    @apply bg-blue-600 mx-1 transition
+ }
+ .main-menu-item .layer-hover .sidebar-submenu {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 68px;
+    height: 100vh;
+    /* background-color: red; */
+ }
+ .main-menu-item:hover .layer-hover .sidebar-submenu{
+    display: block;
+    /* background-color: orange; */
+    /* height: 100vh; */
+    
+    
+
+ }
