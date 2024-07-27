@@ -11,7 +11,7 @@ const SidebarSubMenu = ({ item }) => {
         <ul className="mt-[0px] w-[231px] overflow-hidden submenu-text">
           {item?.subMenu?.map((subItem) => (
             <li key={subItem.id}>
-              <Link to={`/${item.subMenu.id}`}>
+              <Link to={`/${subItem.id}`}>
                 <div
                   key={subItem.id}
                   className="hover:bg-[#fbf0fb] w-[200px] h-[38px] mt-1 ml-3 flex justify-start gap-2 px-[25px] py-[10px]"
