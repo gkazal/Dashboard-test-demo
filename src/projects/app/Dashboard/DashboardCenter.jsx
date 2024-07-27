@@ -5,7 +5,7 @@ const DashboardCenter = () => {
     <div className="flex justify-center ">
       <div className="">
         <div className="w-[1170px]">
-          <h2 className="text-3xl font-medium py-4">Dashboard </h2>
+          <h2 className="text-3xl font-medium py-4">finance Dashboard </h2>
           <div className=" border-t-2 py-4">
             <img src={chart} alt="" />
           </div>

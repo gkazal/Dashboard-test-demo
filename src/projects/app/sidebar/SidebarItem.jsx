@@ -5,7 +5,6 @@ const SidebarItem = ({ item, onClick, active }) => {
   return (
     <div>
       <button type="button" className=" w-full" onClick={onClick}    >
-        
         {/* active hole class a active show hobe na hole sitebarIconHover show hobe.. */}
         <div
           className={`flex flex-col items-center sidebar-image-hover  ${
