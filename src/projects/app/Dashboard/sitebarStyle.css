@@ -7,11 +7,10 @@
     @apply relative
 }
 
-.submenu-container{
-    /* @apply absolute top-0  left-[70px] bg-white p-4 rounded-xl */
+/* .submenu-container{
     @apply fixed top-16  left-[70px] bg-white p-4 rounded-xl
-
-}
+} */
 .active{
-    background-color: blue;
+    background-color: #fbf2fb;
+    /* padding-top: 6px; */
 }
