@@ -48,4 +48,25 @@ export const menuArr = [
       },
     ],
   },
+  {
+    id: "contacts",
+    miniTitle: "CONTACTS",
+    title: "CONTACTS",
+    iconFill: usersIcon,
+    iconLine: usersIcon,
+    subMenu: [
+      {
+        id: "contacts/dashboard",
+        title: "Dashboard",
+        iconL: dashboardIcon,
+        iconF: dashboardIcon,
+      },
+      {
+        id: "contacts/list",
+        title: "Contacts",
+        iconF: usersMiniIcon,
+        iconL: usersMiniIcon,
+      },
+    ],
+  },
 ];
