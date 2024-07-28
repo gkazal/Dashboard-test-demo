@@ -25,6 +25,18 @@ export const menuArr = [
         iconL: accounts,
         iconF: accounts,
       },
+      {
+        id: "finance/transactions",
+        title: "Transaction",
+        iconL: accounts,
+        iconF: accounts,
+      },
+      {
+        id: "finance/reports",
+        title: "Reports",
+        iconL: accounts,
+        iconF: accounts,
+      },
     ],
   },
   {
@@ -42,7 +54,19 @@ export const menuArr = [
       },
       {
         id: "users/list",
-        title: "Usersss",
+        title: "Users",
+        iconF: usersMiniIcon,
+        iconL: usersMiniIcon,
+      },
+      {
+        id: "users/reports",
+        title: "Reports",
+        iconF: usersMiniIcon,
+        iconL: usersMiniIcon,
+      },
+      {
+        id: "users/projects",
+        title: "Projects",
         iconF: usersMiniIcon,
         iconL: usersMiniIcon,
       },
@@ -56,14 +80,26 @@ export const menuArr = [
     iconLine: usersIcon,
     subMenu: [
       {
-        id: "contacts/dashboard",
+        id: "contact/dashboard",
         title: "Dashboard",
         iconL: dashboardIcon,
         iconF: dashboardIcon,
       },
       {
-        id: "contacts/list",
-        title: "Contacts",
+        id: "contact/domain",
+        title: "Domain",
+        iconF: usersMiniIcon,
+        iconL: usersMiniIcon,
+      },
+      {
+        id: "contact/hosting",
+        title: "Hosting",
+        iconF: usersMiniIcon,
+        iconL: usersMiniIcon,
+      },
+      {
+        id: "contact/reports",
+        title: "Reports",
         iconF: usersMiniIcon,
         iconL: usersMiniIcon,
       },

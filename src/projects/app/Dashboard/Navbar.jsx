@@ -40,6 +40,11 @@ const Navbar = () => {
               </li>
             </ul>
           </button>
+
+          {/* <div className="ml-6 text-lg font-normal">
+            <span>finance / </span>
+            <span>Dashboard</span>
+          </div> */}
         </div>
 
         <div className="navbar-end">

@@ -4,11 +4,15 @@ import { menuArr } from "../../lib/Icons";
 import SidebarItem from "./SidebarItem";
 import SidebarSubMenu from "./SidebarSubMenu";
 import "./Sidebar.css";
-
+import { useLocation } from "react-router-dom";
 
 const Sidebar = ({ children }) => {
   const [open, setOpen] = useState(false);
 
+  const { pathname } = useLocation();
+  const currentPath = pathname.split("/")[1];
+
+  console.log(currentPath);
   // const [menuId, setMenuId] = useState("finance");
   const [menuItem, setMenuItem] = useState(menuArr[0]);
 
@@ -40,7 +44,8 @@ const Sidebar = ({ children }) => {
               <SidebarItem
                 item={item}
                 onClick={() => handleClick(item)}
-                active={menuItem.id === item.id}
+                // active={menuItem.id === item.id}
+                active={item.id === currentPath}
               />
 
               {/* sidebar sub menu with hover */}
