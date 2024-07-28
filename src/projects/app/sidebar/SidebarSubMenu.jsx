@@ -1,6 +1,11 @@
-import { Link } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
-const SidebarSubMenu = ({ item }) => {
+const SidebarSubMenu = ({ item, onClick }) => {
+  const navigate = useNavigate()
+  const handleSubMenuClick = (subItem) =>{
+    navigate( `/${subItem.id }`)
+    onClick(item)
+  }
   return (
     <div className="sidebar-submenu mt-[64px]">
       <div className="submenu-title ">
@@ -11,7 +16,8 @@ const SidebarSubMenu = ({ item }) => {
         <ul className="mt-[0px] w-[231px] overflow-hidden submenu-text">
           {item?.subMenu?.map((subItem) => (
             <li key={subItem.id}>
-              <Link to={`/${subItem.id}`}>
+              {/* subitem click korle seta dhore state change korte hobe.. and then navigate korte hobe. */}
+              <button type="button" onClick={()=>handleSubMenuClick(subItem)}>
                 <div
                   key={subItem.id}
                   className="hover:bg-[#fbf0fb] w-[200px] h-[38px] mt-1 ml-3 flex justify-start gap-2 px-[25px] py-[10px]"
@@ -23,7 +29,7 @@ const SidebarSubMenu = ({ item }) => {
                   />
                   <a className="font-medium text-[16px] ">{subItem.title}</a>
                 </div>
-              </Link>
+              </button>
             </li>
           ))}
         </ul>

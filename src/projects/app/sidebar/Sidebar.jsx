@@ -15,7 +15,7 @@ const Sidebar = ({ children }) => {
   console.log(currentPath);
   // const [menuId, setMenuId] = useState("finance");
   const [menuItem, setMenuItem] = useState(menuArr[0]);
-
+  console.log(menuItem);
   const handleClick = (item) => {
     setMenuItem(item);
     console.log(item);
@@ -51,7 +51,7 @@ const Sidebar = ({ children }) => {
               {/* sidebar sub menu with hover */}
 
               <div className="layer-hover">
-                <SidebarSubMenu item={item} />
+                <SidebarSubMenu item={item} onClick={handleClick} />
               </div>
 
               {/* {item.id === menuItem.id ? <SubMenuHover item={item} /> : null} */}

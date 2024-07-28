@@ -6,7 +6,6 @@ import usersMiniIcon from "../../assets/images/sitemenu/Users/people.svg";
 
 const menuArr = [
     {
-      // id: 1, title: "Account", iconD: accountIcon, iconA: accountIcon,
       id: "finance",
       miniTitle: "F&A",
       title: "Finance & Account",
@@ -80,25 +79,25 @@ const menuArr = [
       iconLine: usersIcon,
       subMenu: [
         {
-          id: "contact/dashboard",
+          id: "contacts/dashboard",
           title: "Dashboard",
           iconL: dashboardIcon,
           iconF: dashboardIcon,
         },
         {
-          id: "contact/domain",
+          id: "contacts/domain",
           title: "Domain",
           iconF: usersMiniIcon,
           iconL: usersMiniIcon,
         },
         {
-          id: "contact/hosting",
+          id: "contacts/hosting",
           title: "Hosting",
           iconF: usersMiniIcon,
           iconL: usersMiniIcon,
         },
         {
-          id: "contact/reports",
+          id: "contacts/reports",
           title: "Reports",
           iconF: usersMiniIcon,
           iconL: usersMiniIcon,

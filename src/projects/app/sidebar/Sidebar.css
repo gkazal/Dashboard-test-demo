@@ -30,11 +30,12 @@
     top: 63px;
     left: 68px;
     height: 100vh;
-    /* background-color: red; */
  }
- .main-menu-item .layer-hover .sidebar-submenu .submenu-text{
-    /* margin-top: -63px; */
- }
+ 
+  .active{
+   background-color: #fbf2fb;
+}
+
 
  .drawer-open .layer-fixed .sidebar-submenu .submenu-title{
     background: #fbf2fb;
