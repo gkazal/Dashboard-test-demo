@@ -35,7 +35,12 @@
   .active{
    background-color: #fbf2fb;
 }
-
+.subMenu-size{
+   @apply hover:bg-[#fbf0fb] w-[200px] h-[38px] mt-1 ml-3 flex justify-start gap-2 px-[25px] py-[10px]
+}
+.subMenu-size:hover .subMenu-img{
+   background-image: url('../../../assets/images/sitemenu/finance/dashboard.svg');
+}
 
  .drawer-open .layer-fixed .sidebar-submenu .submenu-title{
     background: #fbf2fb;

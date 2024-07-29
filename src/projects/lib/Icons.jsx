@@ -1,5 +1,5 @@
 import financeIcon from "../../assets/images/sitemenu/finance/account-line.svg";
-import dashboardIcon from "../../assets/images/sitemenu/finance/dashboard.svg";
+import dashboardIcon from "../../assets/images/sitemenu/finance/dashboard-fill.svg";
 import accounts from "../../assets/images/sitemenu/finance/people.svg";
 import usersIcon from "../../assets/images/sitemenu/finance/hrm-line.svg";
 import usersMiniIcon from "../../assets/images/sitemenu/Users/people.svg";

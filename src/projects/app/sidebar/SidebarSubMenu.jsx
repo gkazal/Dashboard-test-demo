@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 const SidebarSubMenu = ({ item, onClick, currentPath }) => {
   const navigate = useNavigate();
 
-  console.log(currentPath)
   const handleSubMenuClick = (subItem) => {
     navigate(`/${subItem.id}`);
     onClick(item);
@@ -23,14 +22,17 @@ const SidebarSubMenu = ({ item, onClick, currentPath }) => {
               {/* subitem click korle seta dhore state change korte hobe..seta acitve a jabe.. and then navigate korte hobe. */}
               <button type="button" onClick={() => handleSubMenuClick(subItem)}>
                 <Link to={`/${subItem.id}`}>
+                {/* submenu te click korle seta path dia dhorbo jemon subItem.id jeta hobe seta pathname ar sate same hobe seta dia
+                dhore amra active thik korbo...
+                */}
                   <div
                     key={subItem.id}
-                    className={`hover:bg-[#fbf0fb] w-[200px] h-[38px] mt-1 ml-3 flex justify-start gap-2 px-[25px] py-[10px]  ${
-                      
-                      currentPath === `/${subItem.id}` ? "active": "" }`}
+                    className={`subMenu-size  ${
+                      currentPath === `/${subItem.id}` ? "active" : ""
+                    }`}
                   >
                     <img
-                      className="w-[20px] h-[20px]"
+                      className="w-[20px] h-[20px] subMenu-img "
                       src={subItem.iconL}
                       alt="icon"
                     />

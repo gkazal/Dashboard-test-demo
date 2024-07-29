@@ -10,11 +10,10 @@ const Sidebar = ({ children }) => {
   const [open, setOpen] = useState(false);
 
   const { pathname } = useLocation();
+  
   const currentPath = pathname.split("/")[1];
 
-
-
-  console.log(pathname)
+  console.log(pathname);
 
   console.log(currentPath);
   // const [menuId, setMenuId] = useState("finance");
@@ -72,7 +71,6 @@ const Sidebar = ({ children }) => {
           item={menuItem}
           onClick={() => handleClick(menuItem)}
           currentPath={pathname}
-     
         />
       </div>
 
