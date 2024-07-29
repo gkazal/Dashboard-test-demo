@@ -11,6 +11,6 @@
     @apply fixed top-16  left-[70px] bg-white p-4 rounded-xl
 } */
 .active{
-    background-color: #fbf2fb;
+    /* background-color: #fbf2fb; */
     /* padding-top: 6px; */
 }

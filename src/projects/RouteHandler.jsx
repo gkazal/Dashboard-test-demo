@@ -1,8 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import DashboardCenter from "./app/Dashboard/DashboardCenter.jsx";
-import DashboardUser from "./app/Dashboard/DashboardUser.jsx";
-import DashboardContacts from "./app/Dashboard/DashboardContacts.jsx";
 import MenuHandler from "./app/menu/MenuHandler.jsx";
+import FinanceDashboard from "./app/pages/finance/FinanceDashboard.jsx";
+import FinanceAccounts from "./app/pages/finance/FinanceAccounts.jsx";
+import UserDashboard from "./app/pages/users/UserDashboard.jsx";
+import { ContactDashboard } from "./app/pages/contacts/ContactDashboard.jsx";
+import UserList from "./app/pages/users/UserList.jsx";
+import { ContactDomain } from "./app/pages/contacts/ContactDomain.jsx";
 
 const router = createBrowserRouter([
     {
@@ -11,21 +14,29 @@ const router = createBrowserRouter([
       children:[
         {
           path:"/finance/dashboard",
-          element: <DashboardCenter/>
+          element: <FinanceDashboard/>
         },
         {
           path:"/finance/accounts",
-          element: <DashboardCenter/>
+          element: <FinanceAccounts/>
         },
       
         {
           path:"/users/dashboard",
-          element: <DashboardUser/>
+          element: <UserDashboard/>
+        },
+        {
+          path:"/users/list",
+          element: <UserList/>
         },
         
         {
-          path:"/contact/dashboard",
-          element: <DashboardContacts/>
+          path:"/contacts/dashboard",
+          element: <ContactDashboard/>
+        },
+        {
+          path:"/contacts/domain",
+          element: <ContactDomain/>
         },
        
       ]

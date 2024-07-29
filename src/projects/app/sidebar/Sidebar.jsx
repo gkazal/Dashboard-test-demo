@@ -12,10 +12,15 @@ const Sidebar = ({ children }) => {
   const { pathname } = useLocation();
   const currentPath = pathname.split("/")[1];
 
+
+
+  console.log(pathname)
+
   console.log(currentPath);
   // const [menuId, setMenuId] = useState("finance");
   const [menuItem, setMenuItem] = useState(menuArr[0]);
   console.log(menuItem);
+
   const handleClick = (item) => {
     setMenuItem(item);
     console.log(item);
@@ -63,7 +68,12 @@ const Sidebar = ({ children }) => {
       {/* sidebar sub menu */}
 
       <div className="layer-fixed">
-        <SidebarSubMenu item={menuItem} />
+        <SidebarSubMenu
+          item={menuItem}
+          onClick={() => handleClick(menuItem)}
+          currentPath={pathname}
+     
+        />
       </div>
 
       {/* Dashboard */}

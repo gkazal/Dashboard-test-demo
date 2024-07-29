@@ -1,6 +1,6 @@
-import chart from "../../../assets/images/01.png";
+import chart from "../../../../assets/images/01.png";
 
-const DashboardContacts = () => {
+export const ContactDashboard = () => {
   return (
     <div>
       <div className="flex justify-center ">
@@ -28,5 +28,3 @@ const DashboardContacts = () => {
     </div>
   );
 };
-
-export default DashboardContacts;

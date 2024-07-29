@@ -1,13 +1,12 @@
+import chart from "../../../../assets/images/01.png";
 
-import chart from "../../../assets/images/01.png";
-
-const DashboardUser = () => {
+export const ContactDomain = () => {
   return (
     <div>
       <div className="flex justify-center ">
         <div className="">
           <div className="w-[1170px]">
-            <h2 className="text-3xl font-medium py-4">User Dashboard </h2>
+            <h2 className="text-3xl font-medium py-4">Contact Domain </h2>
             <div className=" border-t-2 py-4">
               <img src={chart} alt="" />
             </div>
@@ -27,7 +26,5 @@ const DashboardUser = () => {
         </div>
       </div>
     </div>
-  );
-};
-
-export default DashboardUser;
+  )
+}

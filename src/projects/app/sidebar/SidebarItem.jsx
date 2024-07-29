@@ -4,8 +4,11 @@ const SidebarItem = ({ item, onClick, active }) => {
   return (
     <div>
       <button type="button" className=" w-full" onClick={onClick}>
-        {/* active hole class a active show hobe na hole sitebarIconHover show hobe.. */}
+        {/* ekane statically finace or user a click korle tader submenu te jeye automatic vabe dashboard route a jabe */}
         <Link to={`/${item.subMenu[0].id}`}>
+
+          {/* active hole class a active show hobe na hole sitebarIconHover show hobe.. */}
+
           <div
             className={`flex flex-col items-center sidebar-image-hover  ${
               active ? "active" : ""

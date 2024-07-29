@@ -3,6 +3,9 @@ import dashboardIcon from "../../assets/images/sitemenu/finance/dashboard.svg";
 import accounts from "../../assets/images/sitemenu/finance/people.svg";
 import usersIcon from "../../assets/images/sitemenu/finance/hrm-line.svg";
 import usersMiniIcon from "../../assets/images/sitemenu/Users/people.svg";
+import contactIcon from "../../assets/images/sitemenu/contact/contacts.svg";
+import reportsIcon from "../../assets/images/common/reports.svg";
+
 
 export const menuArr = [
   {
@@ -34,8 +37,8 @@ export const menuArr = [
       {
         id: "finance/reports",
         title: "Reports",
-        iconL: accounts,
-        iconF: accounts,
+        iconL: reportsIcon,
+        iconF: reportsIcon,
       },
     ],
   },
@@ -61,8 +64,8 @@ export const menuArr = [
       {
         id: "users/reports",
         title: "Reports",
-        iconF: usersMiniIcon,
-        iconL: usersMiniIcon,
+        iconF: reportsIcon,
+        iconL: reportsIcon,
       },
       {
         id: "users/projects",
@@ -73,36 +76,39 @@ export const menuArr = [
     ],
   },
   {
-    id: "contacts",
+    id: "CONTACTS",
     miniTitle: "CONTACTS",
     title: "CONTACTS",
-    iconFill: usersIcon,
-    iconLine: usersIcon,
+    iconFill: contactIcon,
+    iconLine: contactIcon,
     subMenu: [
       {
-        id: "contact/dashboard",
+        id: "contacts/dashboard",
         title: "Dashboard",
         iconL: dashboardIcon,
         iconF: dashboardIcon,
       },
       {
-        id: "contact/domain",
+        id: "contacts/domain",
         title: "Domain",
         iconF: usersMiniIcon,
         iconL: usersMiniIcon,
       },
       {
-        id: "contact/hosting",
+        id: "contacts/hosting",
         title: "Hosting",
         iconF: usersMiniIcon,
         iconL: usersMiniIcon,
       },
       {
-        id: "contact/reports",
+        id: "contacts/reports",
         title: "Reports",
-        iconF: usersMiniIcon,
-        iconL: usersMiniIcon,
+        iconF: reportsIcon,
+        iconL: reportsIcon,
       },
+      
     ],
   },
+  
+  
 ];

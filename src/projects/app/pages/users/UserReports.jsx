@@ -1,12 +1,12 @@
-import chart from "../../../../assets/images/01.png";
+import chart from "../../../assets/images/01.png";
 
-function FinanceDashboard() {
+const UserReports = () => {
     return (
         <div>
         <div className="flex justify-center ">
           <div className="">
             <div className="w-[1170px]">
-              <h2 className="text-3xl font-medium py-4">Finance Dashboard </h2>
+              <h2 className="text-3xl font-medium py-4">User Reports </h2>
               <div className=" border-t-2 py-4">
                 <img src={chart} alt="" />
               </div>
@@ -27,6 +27,6 @@ function FinanceDashboard() {
         </div>
       </div>
     );
-}
+};
 
-export default FinanceDashboard;
+export default UserReports;
