@@ -5,38 +5,40 @@ import usersIcon from "../../../assets/images/sitemenu/finance/hrm-line.svg";
 import usersMiniIcon from "../../../assets/images/sitemenu/Users/people.svg";
 import contactIcon from "../../../assets/images/sitemenu/contact/contacts.svg";
 import reportsIcon from "../../../assets/images/common/reports.svg";
+import imageFill from "../../../assets/images/common/img-active.svg";
+import dashboardLine from '../../../assets/images/common/dashboard-line.svg'
 
  const menuArr = [
   {
     id: "finance",
     miniTitle: "F&A",
     title: "Finance & Account",
-    iconFill: financeIcon,
+    iconFill: imageFill,
     iconLine: financeIcon,
     subMenu: [
       {
         id: "finance/dashboard",
         title: "Dashboard",
-        iconL: dashboardIcon,
+        iconL: dashboardLine,
         iconF: dashboardIcon,
       },
       {
         id: "finance/accounts",
         title: "Accountsssss",
         iconL: accounts,
-        iconF: accounts,
+        iconF: imageFill,
       },
       {
         id: "finance/transactions",
         title: "Transaction",
         iconL: accounts,
-        iconF: accounts,
+        iconF: imageFill,
       },
       {
         id: "finance/reports",
         title: "Reports",
         iconL: accounts,
-        iconF: accounts,
+        iconF: imageFill,
       },
     ],
   },
@@ -44,31 +46,31 @@ import reportsIcon from "../../../assets/images/common/reports.svg";
     id: "users",
     miniTitle: "USERS",
     title: "USERS",
-    iconFill: usersIcon,
+    iconFill: imageFill,
     iconLine: usersIcon,
     subMenu: [
       {
         id: "users/dashboard",
         title: "Dashboard",
         iconL: dashboardIcon,
-        iconF: dashboardIcon,
+        iconF: imageFill,
       },
       {
         id: "users/list",
         title: "Users",
-        iconF: usersMiniIcon,
+        iconF: imageFill,
         iconL: usersMiniIcon,
       },
       {
         id: "users/reports",
         title: "Reports",
-        iconF: usersMiniIcon,
+        iconF: imageFill,
         iconL: usersMiniIcon,
       },
       {
         id: "users/projects",
         title: "Projects",
-        iconF: usersMiniIcon,
+        iconF: imageFill,
         iconL: usersMiniIcon,
       },
     ],
@@ -77,32 +79,32 @@ import reportsIcon from "../../../assets/images/common/reports.svg";
     id: "contacts",
     miniTitle: "CONTACTS",
     title: "CONTACTS",
-    iconFill: contactIcon,
+    iconFill: imageFill,
     iconLine: contactIcon,
     subMenu: [
       {
         id: "contacts/dashboard",
         title: "Dashboard",
         iconL: dashboardIcon,
-        iconF: dashboardIcon,
+        iconF: imageFill,
       },
       {
         id: "contacts/domain",
         title: "Domain",
         iconL: usersMiniIcon,
-        iconF: usersMiniIcon,
+        iconF: imageFill,
       },
       {
         id: "contacts/hosting",
         title: "Hosting",
         iconL: usersMiniIcon,
-        iconF: usersMiniIcon,
+        iconF: imageFill,
       },
       {
         id: "contacts/reports",
         title: "Reports",
         iconL: reportsIcon,
-        iconF: reportsIcon,
+        iconF: imageFill,
       },
     ],
   },

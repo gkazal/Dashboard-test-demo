@@ -22,7 +22,7 @@ const SidebarSubMenu = ({ item, onClick, currentPath }) => {
               {/* subitem click korle seta dhore state change korte hobe..seta acitve a jabe.. and then navigate korte hobe. */}
               <button type="button" onClick={() => handleSubMenuClick(subItem)}>
                 <Link to={`/${subItem.id}`}>
-                {/* submenu te click korle seta path dia dhorbo jemon subItem.id jeta hobe seta pathname ar sate same hobe seta dia
+                  {/* submenu te click korle seta path dia dhorbo jemon subItem.id jeta hobe seta pathname ar sate same hobe seta dia
                 dhore amra active thik korbo...
                 */}
                   <div
@@ -31,12 +31,21 @@ const SidebarSubMenu = ({ item, onClick, currentPath }) => {
                       currentPath === `/${subItem.id}` ? "active" : ""
                     }`}
                   >
-                    <img
-                      className="w-[20px] h-[20px] subMenu-img "
-                      src={subItem.iconL}
-                      alt="icon"
-                    />
-                    <a className="font-medium text-[16px] ">{subItem.title}</a>
+                    <div className="sub-img-wrapeer">
+                      <img
+                        className="w-[20px] h-[20px]   "
+                        src={subItem.iconL}
+                        alt="icon"
+                      />
+                      <img
+                        className="w-[20px] h-[20px]  "
+                        src={subItem.iconF}
+                        alt="icon"
+                      />
+                    </div>
+                    <a className="font-medium text-[16px] subItem-title">
+                      {subItem.title}
+                    </a>
                   </div>
                 </Link>
               </button>
