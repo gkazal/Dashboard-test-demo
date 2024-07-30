@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import menu from "../../../assets/images/Menu.svg";
-import { menuArr } from "../../lib/Icons";
+import { menuArr } from "../sidebar/menuArr";
 
 const SidebarMenu = ({ setShowNav }) => {
   const [menuItem, setMenuItem] = useState("");

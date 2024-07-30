@@ -1,10 +1,10 @@
 import { useState } from "react";
 import menu from "../../../assets/images/Menu.svg";
-import { menuArr } from "../../lib/Icons";
 import SidebarItem from "./SidebarItem";
 import SidebarSubMenu from "./SidebarSubMenu";
 import "./Sidebar.css";
 import { useLocation } from "react-router-dom";
+import menuArr from "./menuArr";
 
 const Sidebar = ({ children }) => {
   const [open, setOpen] = useState(false);

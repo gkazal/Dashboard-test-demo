@@ -1,8 +1,8 @@
 import { useState } from "react";
 import menu from "../../../assets/images/Menu.svg";
-import { menuArr } from "../../lib/Icons";
 import SidebarItem from "./SidebarItem";
 import SidebarSubMenu from "./SidebarSubMenu";
+import { menuArr } from "./menuArr";
 // import DashboardCenter from "../Dashboard/DashboardCenter";
 
 const Sidebar = ({ children }) => {

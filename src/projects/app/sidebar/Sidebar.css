@@ -36,10 +36,24 @@
    background-color: #fbf2fb;
 }
 .subMenu-size{
-   @apply hover:bg-[#fbf0fb] w-[200px] h-[38px] mt-1 ml-3 flex justify-start gap-2 px-[25px] py-[10px]
+   /* @apply hover:bg-[#fbf0fb] w-[200px] h-[38px] mt-1 ml-3 flex justify-start gap-2 px-[25px] py-[10px] */
+   width: 200px;
+   margin-top: 4px;
+   margin-left: 12px;
+   display: flex;
+   justify-content: flex-start;
+   gap: 8px;
+   padding-left: 25px;
+   padding-right: 25px;
+   padding-top: 10px;
+   padding-bottom: 10px;
 }
+.subMenu-size:hover{
+   background-color: #fbf0fb;
+}
+
 .subMenu-size:hover .subMenu-img{
-   background-image: url('../../../assets/images/sitemenu/finance/dashboard.svg');
+   background-color: red;
 }
 
  .drawer-open .layer-fixed .sidebar-submenu .submenu-title{
