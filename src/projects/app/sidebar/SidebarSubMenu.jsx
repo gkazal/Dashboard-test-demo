@@ -16,7 +16,7 @@ const SidebarSubMenu = ({ item, onClick, currentPath }) => {
         <span>{item.title}</span>
       </div>
       <div className="bg-white h-full  ">
-        <ul className="mt-[0px] w-[231px] overflow-hidden submenu-text">
+        <ul className="mt-[0px] w-[231px]">
           {item?.subMenu?.map((subItem) => (
             <li key={subItem.id}>
               {/* subitem click korle seta dhore state change korte hobe..seta acitve a jabe.. and then navigate korte hobe. */}
@@ -25,7 +25,7 @@ const SidebarSubMenu = ({ item, onClick, currentPath }) => {
                   {/* submenu te click korle seta path dia dhorbo jemon subItem.id jeta hobe seta pathname ar sate same hobe seta dia
                 dhore amra active thik korbo...
                 */}
-                  <div
+                  <li
                     key={subItem.id}
                     className={`subMenu-size  ${
                       currentPath === `/${subItem.id}` ? "active" : ""
@@ -43,10 +43,10 @@ const SidebarSubMenu = ({ item, onClick, currentPath }) => {
                         alt="icon"
                       />
                     </div>
-                    <a className="font-medium text-[16px] subItem-title">
-                      {subItem.title}
-                    </a>
-                  </div>
+                      <a className="font-medium text-[16px] subItem-title">
+                        {subItem.title}
+                      </a>
+                  </li>
                 </Link>
               </button>
             </li>
