@@ -21,14 +21,11 @@
      @apply max-w-[0] duration-300 
  }
  
- .main-menu-item .sidebar-image:hover {
-    /* @apply bg-[#FBF2FB] mx-1 transition  */
- }
-
  .sidebar-item:hover .sidebar-image {
    background-color: #FBF2FB;
    border-radius: 8px;
  }
+
 
  
  .main-menu-item .layer-hover .sidebar-submenu {
@@ -58,16 +55,11 @@
    justify-content: flex-start;
    flex-wrap: nowrap;
    gap: 8px;
-   /* padding-left: 25px;
-   padding-right: 25px;
-   padding-top: 10px;
-   padding-bottom: 10px; */
    padding: 8px ;
 }
 .subMenu-size:hover{
    background-color: #fbf0fb;
    border-radius: 8px;
-
 }
 .active .subItem-title{
    margin-left: 20px ;

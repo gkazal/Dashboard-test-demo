@@ -52,8 +52,8 @@ import dashboardLine from '../../../assets/images/common/dashboard-line.svg'
       {
         id: "users/dashboard",
         title: "Dashboard",
-        iconL: dashboardIcon,
-        iconF: imageFill,
+        iconL: dashboardLine,
+        iconF: dashboardIcon,
       },
       {
         id: "users/list",
