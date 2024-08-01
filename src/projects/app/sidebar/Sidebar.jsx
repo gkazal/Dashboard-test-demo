@@ -10,7 +10,7 @@ const Sidebar = ({ children }) => {
   const [open, setOpen] = useState(false);
 
   const { pathname } = useLocation();
-  
+
   const currentPath = pathname.split("/")[1];
 
   console.log(pathname);
@@ -76,9 +76,7 @@ const Sidebar = ({ children }) => {
 
       {/* Dashboard */}
 
-      <div className={`mt-[64px]  ${open ? "drawer-open" : "drawer-close"}`}>
-        {children}
-      </div>
+      <div className="content_wrapper">{children}</div>
     </div>
   );
 };

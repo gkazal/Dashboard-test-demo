@@ -7,30 +7,46 @@
 .sidebar-submenu{
     @apply bg-white h-full
 }
-.drawer-open {
-    @apply w-[calc(100%_-_272px)]
-}
-.drawer-close {
-    @apply  w-[calc(100%_-_71px)]
-}
+
+
 .drawer-open .layer-fixed .sidebar-submenu{
-    @apply overflow-hidden w-full max-w-[231px] duration-300 border-r 
+    @apply overflow-hidden w-full max-w-[230px] transition-all duration-300 border-r 
  }
  
  .drawer-close .layer-fixed .sidebar-submenu{
-     @apply max-w-[0] duration-300 
+     @apply max-w-[0] duration-300 overflow-hidden
  }
+ .drawer-open .content_wrapper {
+  @apply w-full max-w-[calc(100%_-_300px)] transition-all duration-300
+ }
+ .drawer-close .content_wrapper {
+  @apply w-full max-w-[calc(100%_-_70px)]  transition-all duration-300
+ }
+ 
+ .content_wrapper{
+  margin-top: 64px;
+ }
+ .dashboard-center{
+  width: 1170px;
+  margin: 0 auto;
+  
+ }
+
+
+
  
  .sidebar-item:hover .sidebar-image {
    background-color: #FBF2FB;
    border-radius: 8px;
  }
 
-
  
  .main-menu-item .layer-hover .sidebar-submenu {
     display: none;
     position: absolute;
+    /* width: 234px; */
+    /* display: block; */
+    /* overflow: hidden; */
     top: 63px;
     left: 68px;
     height: 100vh;
@@ -68,6 +84,10 @@
    margin-left: 20px;
 }
 .submenu-title{
+  display: flex;
+  align-items: center;
+  inline-size: 220px;
+  overflow: hidden;
    background: #fbf2fb;
    border-radius: 12px;
    margin: 5px 5px 10px;
@@ -75,10 +95,6 @@
    font-weight: 700;
    font-size: 20px;
    color: rgb(122, 112, 112);
-   display: flex;
-   align-items: center;
-   inline-size: 220px;
-   overflow: hidden;
    white-space: nowrap;
 }
 .submenu-title img {
@@ -127,14 +143,11 @@
  /*.... sub menu image hover and image active icon change ........................*/
 
  
- .sub-img-wrapeer :nth-child(2){
+ .sub-img-wrapeer :nth-child(2),  .active .sub-img-wrapeer  :nth-child(1){
    opacity: 0;
    position: absolute;
  }
- .active .sub-img-wrapeer  :nth-child(1) {
-   opacity: 0;
-   position: absolute;
- }
+
  .active .sub-img-wrapeer :nth-child(2){
    opacity: 1;
    position: absolute;
@@ -142,15 +155,14 @@
 
  /* layer fixed a sub menu te hover korle icon change hobe */
  .drawer-open .layer-fixed .sidebar-submenu .subMenu-size:hover .sub-img-wrapeer :nth-child(1) {
-   opacity: 0;
-   position: absolute;
-   width: 200px;
+
+   @apply absolute opacity-0 w-[200px]
  }
  .drawer-open .layer-fixed .sidebar-submenu .subMenu-size:hover .sub-img-wrapeer :nth-child(2) {
    opacity: 1;
    position: absolute;
-   
  }
+
  .drawer-close  .active .sub-img-wrapeer :nth-child(2) {
    opacity: 0;
  }

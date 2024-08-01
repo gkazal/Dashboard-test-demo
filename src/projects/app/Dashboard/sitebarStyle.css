@@ -1,16 +1,9 @@
-.sitebarIconHover:hover{
+/* .sitebarIconHover:hover{
     background-color: #fbf2fb;
     border-radius: 8px;
 }
 
 .main-menu{
-    @apply relative
-}
-
-/* .submenu-container{
-    @apply fixed top-16  left-[70px] bg-white p-4 rounded-xl
+    @apply 
 } */
-.active{
-    /* background-color: #fbf2fb; */
-    /* padding-top: 6px; */
-}
+
