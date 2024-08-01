@@ -74,7 +74,7 @@ const Sidebar = ({ children }) => {
         />
       </div>
 
-      {/* Dashboard */}
+      {/* Content */}
 
       <div className="content_wrapper">{children}</div>
     </div>
